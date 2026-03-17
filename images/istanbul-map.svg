@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" id="istanbulMap" class="istanbul-map">
+  <defs>
+    <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="100%" stop-color="#BFDBFE"/>
+    </linearGradient>
+    <filter id="mapShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000015"/>
+    </filter>
+  </defs>
+
+  <!-- Water / Background -->
+  <rect width="800" height="400" fill="url(#waterGrad)" rx="16"/>
+
+  <!-- Bosphorus Strait -->
+  <path d="M385,0 C395,80 375,160 390,240 C400,300 395,350 400,400"
+        fill="none" stroke="#93C5FD" stroke-width="8" opacity="0.6"/>
+
+  <!-- District Paths -->
+  <g id="districtPaths" filter="url(#mapShadow)">
+    <path d="M65,40 L125,35 L130,65 L120,95 L70,90 Z" data-district="arnavutkoy" data-name="Arnavutköy"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M5,60 L65,40 L70,90 L80,150 L50,190 L5,170 Z" data-district="catalca" data-name="Çatalca"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M5,170 L50,190 L55,260 L40,290 L5,280 Z" data-district="silivri" data-name="Silivri"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M50,190 L80,150 L115,175 L110,260 L55,260 Z" data-district="buyukcekmece" data-name="Büyükçekmece"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M110,185 L160,180 L165,235 L110,240 Z" data-district="esenyurt" data-name="Esenyurt"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M110,240 L165,235 L160,280 L105,285 Z" data-district="beylikduzu" data-name="Beylikdüzü"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M160,235 L200,230 L205,280 L160,280 Z" data-district="avcilar" data-name="Avcılar"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M165,200 L220,195 L215,245 L200,250 L160,245 Z" data-district="kucukcekmece" data-name="Küçükçekmece"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M130,130 L210,125 L215,180 L160,185 L130,170 Z" data-district="basaksehir" data-name="Başakşehir"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M200,100 L255,95 L260,145 L210,150 Z" data-district="sultangazi" data-name="Sultangazi"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M235,125 L275,120 L280,165 L240,170 Z" data-district="gaziosmanpasa" data-name="Gaziosmanpaşa"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M220,170 L265,165 L270,200 L225,205 Z" data-district="esenler" data-name="Esenler"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M205,195 L255,190 L260,225 L210,230 Z" data-district="bagcilar" data-name="Bağcılar"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M235,220 L275,215 L280,250 L240,255 Z" data-district="gungoren" data-name="Güngören"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M195,230 L240,225 L245,260 L200,265 Z" data-district="bahcelievler" data-name="Bahçelievler"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M200,260 L255,255 L260,290 L205,295 Z" data-district="bakirkoy" data-name="Bakırköy"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M250,250 L290,245 L295,280 L255,285 Z" data-district="zeytinburnu" data-name="Zeytinburnu"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M255,185 L295,180 L300,215 L260,220 Z" data-district="bayrampasa" data-name="Bayrampaşa"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M255,95 L310,85 L320,155 L280,165 L260,145 Z" data-district="eyupsultan" data-name="Eyüpsultan"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M295,140 L335,135 L340,180 L300,185 Z" data-district="kagithane" data-name="Kağıthane"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M300,180 L340,175 L345,210 L305,215 Z" data-district="sisli" data-name="Şişli"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M310,30 L370,25 L380,110 L335,120 L310,95 Z" data-district="sariyer" data-name="Sarıyer"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M330,195 L365,190 L370,230 L335,235 Z" data-district="besiktas" data-name="Beşiktaş"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M295,210 L335,205 L340,240 L300,245 Z" data-district="beyoglu" data-name="Beyoğlu"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M275,235 L320,230 L325,270 L280,275 Z" data-district="fatih" data-name="Fatih"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M420,25 L520,20 L530,95 L450,105 L420,80 Z" data-district="beykoz" data-name="Beykoz"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M410,170 L460,165 L465,220 L415,225 Z" data-district="uskudar" data-name="Üsküdar"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M530,20 L680,15 L690,90 L545,95 Z" data-district="sile" data-name="Şile"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M520,90 L610,85 L615,140 L525,145 Z" data-district="cekmekoy" data-name="Çekmeköy"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M520,145 L610,140 L615,185 L525,190 Z" data-district="sancaktepe" data-name="Sancaktepe"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M460,135 L525,130 L530,180 L465,185 Z" data-district="umraniye" data-name="Ümraniye"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M455,195 L515,190 L520,230 L460,235 Z" data-district="atasehir" data-name="Ataşehir"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M415,230 L470,225 L475,265 L420,270 Z" data-district="kadikoy" data-name="Kadıköy"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M475,240 L535,235 L540,275 L480,280 Z" data-district="maltepe" data-name="Maltepe"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M535,230 L585,225 L590,265 L540,270 Z" data-district="kartal" data-name="Kartal"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M570,195 L625,190 L630,230 L575,235 Z" data-district="sultanbeyli" data-name="Sultanbeyli"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M585,245 L665,240 L670,290 L590,295 Z" data-district="pendik" data-name="Pendik"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M660,260 L720,255 L730,310 L665,315 Z" data-district="tuzla" data-name="Tuzla"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+    <path d="M485,310 L515,305 L520,335 L490,340 Z" data-district="adalar" data-name="Adalar"
+          fill="#E2E8F0" stroke="#94A3B8" stroke-width="1"
+          class="district-path" style="cursor:pointer;transition:fill 0.3s,stroke 0.3s"/>
+  </g>
+
+  <!-- District Labels -->
+  <g class="district-labels" font-family="Inter, sans-serif" font-size="7" fill="#475569" text-anchor="middle" font-weight="600" style="pointer-events:none">
+    <text x="95" y="65" data-label="arnavutkoy">Arnavutköy</text>
+    <text x="40" y="120" data-label="catalca">Çatalca</text>
+    <text x="35" y="230" data-label="silivri">Silivri</text>
+    <text x="85" y="230" data-label="buyukcekmece">Büyükçekmece</text>
+    <text x="135" y="210" data-label="esenyurt">Esenyurt</text>
+    <text x="120" y="260" data-label="beylikduzu">Beylikdüzü</text>
+    <text x="170" y="260" data-label="avcilar">Avcılar</text>
+    <text x="190" y="220" data-label="kucukcekmece">Küçükçekmece</text>
+    <text x="170" y="155" data-label="basaksehir">Başakşehir</text>
+    <text x="225" y="120" data-label="sultangazi">Sultangazi</text>
+    <text x="250" y="145" data-label="gaziosmanpasa">Gaziosmanpaşa</text>
+    <text x="240" y="185" data-label="esenler">Esenler</text>
+    <text x="225" y="210" data-label="bagcilar">Bağcılar</text>
+    <text x="250" y="235" data-label="gungoren">Güngören</text>
+    <text x="215" y="245" data-label="bahcelievler">Bahçelievler</text>
+    <text x="225" y="275" data-label="bakirkoy">Bakırköy</text>
+    <text x="265" y="265" data-label="zeytinburnu">Zeytinburnu</text>
+    <text x="270" y="200" data-label="bayrampasa">Bayrampaşa</text>
+    <text x="280" y="130" data-label="eyupsultan">Eyüpsultan</text>
+    <text x="310" y="160" data-label="kagithane">Kağıthane</text>
+    <text x="315" y="195" data-label="sisli">Şişli</text>
+    <text x="340" y="80" data-label="sariyer">Sarıyer</text>
+    <text x="345" y="210" data-label="besiktas">Beşiktaş</text>
+    <text x="310" y="225" data-label="beyoglu">Beyoğlu</text>
+    <text x="295" y="250" data-label="fatih">Fatih</text>
+    <text x="470" y="60" data-label="beykoz">Beykoz</text>
+    <text x="430" y="195" data-label="uskudar">Üsküdar</text>
+    <text x="600" y="55" data-label="sile">Şile</text>
+    <text x="560" y="115" data-label="cekmekoy">Çekmeköy</text>
+    <text x="560" y="165" data-label="sancaktepe">Sancaktepe</text>
+    <text x="490" y="155" data-label="umraniye">Ümraniye</text>
+    <text x="480" y="210" data-label="atasehir">Ataşehir</text>
+    <text x="440" y="245" data-label="kadikoy">Kadıköy</text>
+    <text x="500" y="255" data-label="maltepe">Maltepe</text>
+    <text x="555" y="245" data-label="kartal">Kartal</text>
+    <text x="590" y="210" data-label="sultanbeyli">Sultanbeyli</text>
+    <text x="620" y="265" data-label="pendik">Pendik</text>
+    <text x="680" y="280" data-label="tuzla">Tuzla</text>
+    <text x="500" y="320" data-label="adalar">Adalar</text>
+  </g>
+
+  <!-- Animated Route Line -->
+  <line id="routeLine" x1="0" y1="0" x2="0" y2="0"
+        stroke="#2563EB" stroke-width="3" stroke-dasharray="8,4"
+        stroke-linecap="round" opacity="0" class="route-line">
+    <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- Route Endpoints -->
+  <circle id="routeStart" cx="0" cy="0" r="6" fill="#2563EB" opacity="0" class="route-point">
+    <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle id="routeEnd" cx="0" cy="0" r="6" fill="#25D366" opacity="0" class="route-point">
+    <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
